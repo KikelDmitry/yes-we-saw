@@ -1,27 +1,21 @@
 <template>
   <div>
-    Всего фильмов:
-    {{ func() }}
+    <div>Всего фильмов: {{ summary }}</div>
+    <div>Пересмотренных: {{ rewatchesAmount }}</div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      func() {
-        setTimeout(() => {
-          this.$store.state.movieList.length;
-        }, 2000);
-      },
-    };
-  },
   computed: {
-    // summary() {
-    //   setTimeout(() => {
-    //     return this.$store.state.movieList.length;
-    //   }, 2000);
-    // },
+    summary() {
+      return this.$store.state.movieList.length;
+    },
+    rewatchesAmount() {
+      return this.$store.state.movieList.filter((movie) => {
+        return movie.rewatch === true;
+      }).length;
+    },
   },
 };
 </script>
