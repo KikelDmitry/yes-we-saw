@@ -1,30 +1,28 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <router-view></router-view>
 </template>
 
+<script>
+export default {
+  methods: {
+    getMovies() {
+      fetch("test-list.json")
+        .then((res) => res.json())
+        .then((json) => {
+          this.$store.state.movieList = json;
+        })
+        .then(this.$store.state.isLoaded = true)
+        .catch((err) => console.log(err));
+    },
+  },
+  mounted() {
+    this.getMovies();
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+html {
+  font-family: sans-serif;
 }
 </style>

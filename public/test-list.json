@@ -1,0 +1,52 @@
+[
+	{
+		"id": 0,
+		"title": "Смесители",
+		"date": "11-11-2021",
+		"type": "movie",
+		"rewatch": true,
+		"alone": true
+	},
+	{
+		"id": 1,
+		"title": "Майор Гном",
+		"date": "15-08-2021",
+		"type": "movie",
+		"rewatch": false,
+		"alone": true
+	},
+	{
+		"id": 2,
+		"title": "Мент-каннибал 4",
+		"date": "12-01-2021",
+		"type": "series",
+		"rewatch": false,
+		"alone": false,
+		"note": "Лучший сериал в истории человечества"
+	},
+	{
+		"id": 3,
+		"title": "Жила-была баба с татуировкой дракона",
+		"date": "26-02-2020",
+		"type": "movie",
+		"rewatch": false,
+		"alone": false
+	},
+	{
+		"id": 4,
+		"title": "Помидоры убийцы 2",
+		"date": "16-12-2021",
+		"type": "movie",
+		"rewatch": true,
+		"alone": false,
+		"note": "Никогда не пересматривать!!!"
+	},
+	{
+		"id": 5,
+		"title": "Зеленый Пелевин",
+		"date": "01-04-2022",
+		"type": "movie",
+		"rewatch": false,
+		"alone": false
+	}
+]
