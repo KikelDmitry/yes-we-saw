@@ -2,7 +2,7 @@
   <article class="movie">
     <h2 class="movie__title">{{ title }}</h2>
     <div class="movie__date">{{ date }}</div>
-    <div class="movie__type">{{ type }}</div>
+    <div class="movie__type">{{ movieType(type) }}</div>
     <div v-if="rewatch" class="movie__rewatch">Пересмотрен</div>
     <div v-if="alone" class="movie__alone">В одиночку</div>
     <div v-if="note && noteIsVisible" class="movie__note">{{ note }}</div>
@@ -69,7 +69,15 @@ export default {
       noteIsVisible: false,
     };
   },
+  computed: {},
   methods: {
+    movieType(movie) {
+      const types = {
+        movie: "Фильм",
+        series: "Сериал",
+      };
+      return types[movie];
+    },
     toggleNote() {
       this.noteIsVisible = !this.noteIsVisible;
     },
@@ -109,10 +117,10 @@ export default {
   }
   &__note {
     position: absolute;
-	bottom: var(--pad);
-	right: var(--pad);
+    bottom: var(--pad);
+    right: var(--pad);
     background-color: inherit;
-	text-align: right;
+    text-align: right;
   }
   &__button {
     display: flex;
