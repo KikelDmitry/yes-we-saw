@@ -14,11 +14,11 @@
 </template>
 
 <script>
-import movieItem from "./movieItem.vue";
+import MovieItem from "./MovieItem.vue";
 
 export default {
   components: {
-    movieItem,
+    MovieItem,
   },
   computed: {
     list() {

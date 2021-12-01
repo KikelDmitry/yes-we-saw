@@ -5,9 +5,9 @@
 </template>
 
 <script>
-import MoviesStat from "../components/moviesStat.vue";
+import MoviesStat from "../components/MoviesStat.vue";
 import SortControls from "../components/SortControls.vue";
-import MoviesList from "../components/moviesList.vue";
+import MoviesList from "../components/MoviesList.vue";
 
 export default {
   components: {
