@@ -13,19 +13,6 @@ export default {
   components: {
     TheNav,
   },
-  methods: {
-    getMovies() {
-      fetch("test-list.json")
-        .then((res) => res.json())
-        .then((json) => {
-          this.$store.state.movieList = json;
-        })
-        .catch((err) => console.log(err));
-    },
-  },
-  mounted() {
-    this.getMovies();
-  },
 };
 </script>
 
@@ -46,8 +33,9 @@ body {
   margin: 0 auto;
 }
 .app-title {
+  margin: 0.5em 0;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 </style>

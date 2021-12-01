@@ -8,14 +8,9 @@
     <div v-if="note && noteIsVisible" class="movie__note">{{ note }}</div>
     <div class="movie__controls">
       <div class="movie__controls-block">
-        <a
-          :href="kpLink"
-          title="Искать на Кинопоиске"
-          class="movie__button movie__kp"
-          target="_blank"
-        >
+        <control-item :link="kpLink" title="Искать на кинопоиске" target="_blank">
           <img src="@/assets/img/kinopoisk.svg" alt="Kinopoisk logo" />
-        </a>
+        </control-item>
         <!-- <button
           v-if="note"
           class="movie__button movie__show-note"
@@ -25,14 +20,7 @@
         >
           🗒️
         </button> -->
-        <control-item
-          v-if="note"
-          :method="toggleNote"
-          :class="
-            noteIsVisible ? 'movie__note movie__note--visible' : 'movie__note'
-          "
-          >🗒️</control-item
-        >
+        <control-item v-if="note" :method="toggleNote">🗒️</control-item>
       </div>
       <div class="movie__controls-block movie__controls-block--main">
         <!-- <button
@@ -41,7 +29,7 @@
           type="button"
           title="Удалить"
         >
-          ❌
+          
         </button>
         <button
           @click="inProgress"
@@ -49,10 +37,10 @@
           type="button"
           title="Редактировать"
         >
-          ✏️
+          
         </button> -->
-        <!-- <control-item :method="inProgress">Hello</control-item>
-        <control-item :method="inProgress">Test</control-item> -->
+        <control-item :method="inProgress" descr="Редактировать">✏️</control-item>
+        <control-item :method="inProgress" descr="Удалить">❌</control-item>
       </div>
     </div>
   </article>
@@ -130,6 +118,7 @@ export default {
   height: 180px;
   position: relative;
   padding: var(--pad);
+  padding-right: calc(var(--pad) + 40px);
   background-color: $color-bg;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   border-radius: 6px;
@@ -147,13 +136,14 @@ export default {
     position: absolute;
     bottom: var(--pad);
     right: var(--pad);
+    left: var(--pad);
     z-index: 100; //tooltip
-    max-width: 50%;
-    padding: calc(var(--pad) / 2);
+    padding: calc(var(--pad) / 3) calc(var(--pad) / 1.3);
     background-color: inherit;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    text-align: right;
     border-radius: 3px;
+    text-align: right;
+    line-height: 1.2;
   }
   &__kp {
     padding: 4px;

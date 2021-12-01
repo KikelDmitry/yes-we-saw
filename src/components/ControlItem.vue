@@ -1,5 +1,12 @@
 <template>
-  <a v-if="link" :href="link" class="button" title="descr"><slot></slot></a>
+  <a
+    v-if="link"
+    :href="link"
+    :class="classes"
+    class="control"
+    :title="descr"
+    ><slot></slot
+  ></a>
   <button
     v-else
     @click="method"
@@ -26,8 +33,8 @@ export default {
     },
     method: {
       type: Function,
-      default: () => console.log(false),
-      required: true,
+      default: () => console.log('control clicked'),
+      required: false,
     },
     classes: {
       type: String,

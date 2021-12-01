@@ -13,6 +13,11 @@ const routes = [
     name: 'List',
     component: () => import('../views/AppList.vue')
   },
+  {
+    path: '/stat',
+    name: 'Statistics',
+    component: () => import('../views/AppStat.vue')
+  },
   // {
   //   path: '/about',
   //   name: 'About',
@@ -25,6 +30,8 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
+  linkActiveClass: 'is-active',
+  linkExactActiveClass: '',
   routes
 })
 
