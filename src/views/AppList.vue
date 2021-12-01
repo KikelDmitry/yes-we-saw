@@ -1,17 +1,19 @@
 <template>
-  <movies-stat v-if="$store.state.isLoaded"></movies-stat>
-  <div v-else>Loading</div>
+  <movies-stat></movies-stat>
+  <sort-controls></sort-controls>
   <movies-list></movies-list>
 </template>
 
 <script>
-import moviesStat from "../components/moviesStat.vue";
-import moviesList from "../components/moviesList.vue";
+import MoviesStat from "../components/moviesStat.vue";
+import SortControls from "../components/SortControls.vue";
+import MoviesList from "../components/moviesList.vue";
 
 export default {
   components: {
-    moviesStat,
-    moviesList,
+    MoviesStat,
+    SortControls,
+    MoviesList,
   },
 };
 </script>

@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <div>Всего фильмов: {{ summary }}</div>
-    <div>Пересмотренных: {{ rewatches }}</div>
-    <div>Сериалов: {{ series }}</div>
-    <div>В одиночку: {{ alone }}</div>
+  <div class="stat">
+    <div class="stat__item">Всего фильмов: {{ summary }}</div>
+    <div class="stat__item">Пересмотренных: {{ rewatches }}</div>
+    <div class="stat__item">Сериалов: {{ series }}</div>
+    <div class="stat__item">В одиночку: {{ alone }}</div>
   </div>
 </template>
 
@@ -38,4 +38,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.stat {
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: inherit;
+}
 </style>

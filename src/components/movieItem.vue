@@ -23,6 +23,14 @@
       >
         ✏️
       </button> -->
+      <a
+        :href="kpLink"
+        title="Искать на Кинопоиске"
+        class="movie__button movie__kp"
+        target="_blank"
+      >
+        <img src="@/assets/img/kinopoisk.svg" alt="Kinopoisk logo" />
+      </a>
       <button
         v-if="note"
         class="movie__button movie__show-note"
@@ -69,7 +77,11 @@ export default {
       noteIsVisible: false,
     };
   },
-  computed: {},
+  computed: {
+    kpLink() {
+      return `https://www.kinopoisk.ru/index.php?kp_query=${this.title}`;
+    },
+  },
   methods: {
     movieType(movie) {
       const types = {
@@ -80,11 +92,6 @@ export default {
     },
     toggleNote() {
       this.noteIsVisible = !this.noteIsVisible;
-    },
-    deleteMovie(title) {
-      console.log(
-        this.$store.state.movieList.find((movie) => movie.title == title)
-      );
     },
   },
 };
@@ -101,8 +108,8 @@ export default {
   position: relative;
   padding: var(--pad);
   padding-right: calc(var(--pad) + var(--btn-size) + 5px);
-  background-color: #fff;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+  background-color: $color-bg;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   border-radius: 6px;
 
   @include df(560) {
@@ -115,6 +122,13 @@ export default {
     line-height: 1;
     margin-bottom: 1em;
   }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--btn-size);
+    height: var(--btn-size);
+  }
   &__note {
     position: absolute;
     bottom: var(--pad);
@@ -122,12 +136,8 @@ export default {
     background-color: inherit;
     text-align: right;
   }
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: var(--btn-size);
-    height: var(--btn-size);
+  &__kp {
+    padding: 4px;
   }
   &__controls {
     position: absolute;

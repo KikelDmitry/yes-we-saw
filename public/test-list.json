@@ -48,5 +48,14 @@
 		"type": "movie",
 		"rewatch": false,
 		"alone": false
+	},
+	{
+		"id": 6,
+		"title": "Банан-убийца",
+		"date": "15-12-2021",
+		"type": "series",
+		"rewatch": false,
+		"alone": false,
+		"note": "Описание отсутствует"
 	}
 ]

@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <div class="app-title">YES, WE SAW!</div>
     <the-nav></the-nav>
     <router-view></router-view>
   </div>
@@ -19,7 +20,6 @@ export default {
         .then((json) => {
           this.$store.state.movieList = json;
         })
-        .then((this.$store.state.isLoaded = true))
         .catch((err) => console.log(err));
     },
   },
@@ -33,8 +33,21 @@ export default {
 html {
   font-family: sans-serif;
 }
+body {
+  min-height: 200vh;
+  background-color: $color-bg;
+  color: $color-fg;
+}
+#app {
+  min-height: inherit;
+}
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+}
+.app-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
 }
 </style>
