@@ -10,7 +10,7 @@
         v-model="input.date"
         type="date"
         class="form__date"
-        :max="input.date"
+        :max="params.maxDate"
       />
     </label>
     <label class="form__label">
@@ -25,9 +25,12 @@
 export default {
   data() {
     return {
+      params: {
+        maxDate: this.maxDate,
+      },
       input: {
         title: "",
-        date: new Date().toISOString().slice(0, 10),
+        date: this.today,
         type: "movie",
         rewatch: false,
         alone: false,
@@ -41,7 +44,14 @@ export default {
       alert("Movie added");
     },
   },
-  computed: {},
+  computed: {
+    today() {
+      return new Date().toISOString().slice(0, 10);
+    },
+    maxDate() {
+      return new Date(Date.now()).toISOString().slice(0, 10);
+    },
+  },
 };
 </script>
 

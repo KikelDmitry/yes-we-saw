@@ -3,15 +3,18 @@
     <div class="app-title">YES, WE SAW!</div>
     <the-nav></the-nav>
     <router-view></router-view>
+  <theme-switcher></theme-switcher>
   </div>
 </template>
 
 <script>
 import TheNav from "./components/TheNav.vue";
+import ThemeSwitcher from "./components/ThemeSwitcher.vue";
 
 export default {
   components: {
     TheNav,
+    ThemeSwitcher,
   },
 };
 </script>

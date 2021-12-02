@@ -1,5 +1,5 @@
 <template>
-  <article class="movie">
+  <article class="movie" ref="card" :class="movieCardClass">
     <h2 class="movie__title">{{ title }}</h2>
     <div class="movie__date">{{ date }}</div>
     <div class="movie__type">{{ movieType(type) }}</div>
@@ -8,38 +8,21 @@
     <div v-if="note && noteIsVisible" class="movie__note">{{ note }}</div>
     <div class="movie__controls">
       <div class="movie__controls-block">
-        <control-item :link="kpLink" title="Искать на кинопоиске" target="_blank">
+        <control-item
+          :link="kpLink"
+          title="Искать на кинопоиске"
+          target="_blank"
+        >
           <img src="@/assets/img/kinopoisk.svg" alt="Kinopoisk logo" />
         </control-item>
-        <!-- <button
-          v-if="note"
-          class="movie__button movie__show-note"
-          @click="toggleNote()"
-          type="button"
-          title="Show note"
+        <control-item v-if="note" :method="toggleNote" class="movie__show-note"
+          >ℹ️</control-item
         >
-          🗒️
-        </button> -->
-        <control-item v-if="note" :method="toggleNote">🗒️</control-item>
       </div>
       <div class="movie__controls-block movie__controls-block--main">
-        <!-- <button
-          @click="inProgress"
-          class="movie__button movie__delete"
-          type="button"
-          title="Удалить"
+        <control-item :method="inProgress" descr="Редактировать"
+          >✏️</control-item
         >
-          
-        </button>
-        <button
-          @click="inProgress"
-          class="movie__button movie__edit"
-          type="button"
-          title="Редактировать"
-        >
-          
-        </button> -->
-        <control-item :method="inProgress" descr="Редактировать">✏️</control-item>
         <control-item :method="inProgress" descr="Удалить">❌</control-item>
       </div>
     </div>
@@ -89,6 +72,9 @@ export default {
     kpLink() {
       return `https://www.kinopoisk.ru/index.php?kp_query=${this.title}`;
     },
+    movieCardClass() {
+      return this.noteIsVisible ? "is-blured" : "";
+    },
   },
   methods: {
     movieType(movie) {
@@ -102,7 +88,7 @@ export default {
       this.noteIsVisible = !this.noteIsVisible;
     },
     inProgress() {
-      alert("Не запилено!");
+      alert("Feature in progess");
     },
   },
 };
@@ -123,6 +109,12 @@ export default {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   border-radius: 6px;
 
+  &.is-blured {
+    & > *:not(.movie__note) {
+      filter: blur(3px);
+      transition: filter 100ms ease-in-out;
+    }
+  }
   @include df(560) {
     --pad: 10px;
   }
@@ -138,12 +130,32 @@ export default {
     right: var(--pad);
     left: var(--pad);
     z-index: 100; //tooltip
+    max-height: 50%;
     padding: calc(var(--pad) / 3) calc(var(--pad) / 1.3);
+    overflow-y: auto;
     background-color: inherit;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
     text-align: right;
-    line-height: 1.2;
+    line-height: 1.3;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+
+      &-thumb {
+        background-color: #ddd;
+
+        &:hover {
+          background-color: #fff;
+        }
+      }
+      &-track {
+        background-color: #1c1c1e;
+      }
+      &-button {
+        display: none;
+      }
+    }
   }
   &__kp {
     padding: 4px;

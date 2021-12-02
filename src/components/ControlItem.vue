@@ -33,7 +33,7 @@ export default {
     },
     method: {
       type: Function,
-      default: () => console.log('control clicked'),
+      default: () => console.log('Function not defined in :method of <control-item></control-item>'),
       required: false,
     },
     classes: {

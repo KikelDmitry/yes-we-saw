@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 // import AppList from '../views/AppList.vue';
-import AddPage from '../views/AddPage.vue';
+import AddMoviePage from '../views/AddMoviePage.vue';
 
 const routes = [
   {
     path: '/',
     name: 'Add movie',
-    component: AddPage,
+    component: AddMoviePage,
   },
   {
     path: '/list',
