@@ -1,10 +1,5 @@
 <template>
-  <a
-    v-if="link"
-    :href="link"
-    :class="classes"
-    class="control"
-    :title="descr"
+  <a v-if="link" :href="link" :class="classes" class="control" :title="descr"
     ><slot></slot
   ></a>
   <button
@@ -33,7 +28,10 @@ export default {
     },
     method: {
       type: Function,
-      default: () => console.log('Function not defined in :method of <control-item></control-item>'),
+      default: () =>
+        console.log(
+          "Function not defined in :method of <control-item></control-item>"
+        ),
       required: false,
     },
     classes: {

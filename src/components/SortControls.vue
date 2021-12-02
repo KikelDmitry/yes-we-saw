@@ -9,16 +9,27 @@
 
 <script>
 export default {
+  data() {
+    return {
+      sortDir: "ASC",
+    };
+  },
   methods: {
     sortBy(by) {
-      return this.$store.state.movieList.sort((a, b) => {
-        return a[by] > b[by] ? 1 : -1;
-      });
-    },
-    byName() {
-      return this.$store.state.movieList.sort((a, b) => {
-        return a.title > b.title ? 1 : -1;
-      });
+      if (by === "date" || by === "type" || by === "title") {
+        this.$store.state.movieList.sort((a, b) => {
+          if (by == "date") {
+            Number(a[by]);
+            Number(b[by]);
+          }
+          return a[by] > b[by] ? 1 : -1;
+        });
+        this.sortDir == "ASC"
+          ? (this.sortrDir = "DESC")
+          : this.sortDir = "ASC";
+      } else {
+        console.error(`"${by}" is wrong param for sort`);
+      }
     },
   },
 };

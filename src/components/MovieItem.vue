@@ -1,11 +1,15 @@
 <template>
-  <article class="movie" ref="card" :class="movieCardClass">
+  <article class="movie" ref="card" :class="movieCardClass" @click="focus">
     <h2 class="movie__title">{{ title }}</h2>
     <div class="movie__date">{{ date }}</div>
     <div class="movie__type">{{ movieType(type) }}</div>
     <div v-if="rewatch" class="movie__rewatch">Пересмотрен</div>
     <div v-if="alone" class="movie__alone">В одиночку</div>
-    <div v-if="note && noteIsVisible" class="movie__note">{{ note }}</div>
+    <div v-if="note && noteIsVisible" @click="toggleNote" class="movie__note">
+      <div class="movie__note-inner">
+        {{ note }}
+      </div>
+    </div>
     <div class="movie__controls">
       <div class="movie__controls-block">
         <control-item
@@ -84,8 +88,9 @@ export default {
       };
       return types[movie];
     },
-    toggleNote() {
+    toggleNote(e) {
       this.noteIsVisible = !this.noteIsVisible;
+      console.log(e);
     },
     inProgress() {
       alert("Feature in progess");
@@ -111,8 +116,8 @@ export default {
 
   &.is-blured {
     & > *:not(.movie__note) {
-      filter: blur(3px);
-      transition: filter 100ms ease-in-out;
+      filter: blur(4px) opacity(1);
+      transition: filter 200ms ease-in-out 0ms;
     }
   }
   @include df(560) {
@@ -126,34 +131,39 @@ export default {
   }
   &__note {
     position: absolute;
-    bottom: var(--pad);
-    right: var(--pad);
-    left: var(--pad);
+    inset: 0;
     z-index: 100; //tooltip
-    max-height: 50%;
-    padding: calc(var(--pad) / 3) calc(var(--pad) / 1.3);
-    overflow-y: auto;
-    background-color: inherit;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 3px;
-    text-align: right;
-    line-height: 1.3;
 
-    &::-webkit-scrollbar {
-      width: 8px;
+    &-inner {
+      position: absolute;
+      bottom: var(--pad);
+      right: var(--pad);
+      // left: var(--pad);
+      max-height: 50%;
+      padding: calc(var(--pad) / 3) calc(var(--pad) / 1.3);
+      overflow-y: auto;
+      background-color: $color-bg;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      text-align: right;
+      line-height: 1.3;
 
-      &-thumb {
-        background-color: #ddd;
+      &::-webkit-scrollbar {
+        width: 8px;
 
-        &:hover {
-          background-color: #fff;
+        &-thumb {
+          background-color: #ddd;
+
+          &:hover {
+            background-color: #fff;
+          }
         }
-      }
-      &-track {
-        background-color: #1c1c1e;
-      }
-      &-button {
-        display: none;
+        &-track {
+          background-color: #1c1c1e;
+        }
+        &-button {
+          display: none;
+        }
       }
     }
   }
