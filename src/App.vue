@@ -3,7 +3,7 @@
     <div class="app-title">YES, WE SAW!</div>
     <the-nav></the-nav>
     <router-view></router-view>
-  <theme-switcher></theme-switcher>
+    <theme-switcher></theme-switcher>
   </div>
 </template>
 
@@ -15,6 +15,25 @@ export default {
   components: {
     TheNav,
     ThemeSwitcher,
+  },
+  data() {
+    return {
+      
+    };
+  },
+  methods: {
+    getMovies() {
+      fetch("test-list.json")
+        .then((res) => res.json())
+        .then((json) => {
+          this.$store.state.movieList = json;
+          this.$store.state.isLoaded = true;
+        })
+        .catch((err) => console.log(err));
+    },
+  },
+  mounted() {
+    this.getMovies();
   },
 };
 </script>

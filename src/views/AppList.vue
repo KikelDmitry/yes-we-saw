@@ -1,7 +1,6 @@
 <template>
   <sort-controls></sort-controls>
-  <movies-list v-if="isLoaded"></movies-list>
-  <div v-else>Loading...</div>
+  <movies-list v-if="$store.state.isLoaded"></movies-list>
 </template>
 
 <script>
@@ -13,24 +12,6 @@ export default {
     SortControls,
     MoviesList,
   },
-  data() {
-    return {
-      isLoaded: false,
-    }
-  },
-  methods: {
-    getMovies() {
-      fetch("test-list.json")
-        .then((res) => res.json())
-        .then((json) => {
-          this.$store.state.movieList = json;
-          this.isLoaded = true;
-        })
-        .catch((err) => console.log(err));
-    },
-  },
-  mounted() {
-    this.getMovies();
-  },
+  
 };
 </script>

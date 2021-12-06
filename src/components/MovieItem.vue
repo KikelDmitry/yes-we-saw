@@ -133,11 +133,12 @@ export default {
     position: absolute;
     inset: 0;
     z-index: 100; //tooltip
+    margin: var(--pad);
 
     &-inner {
       position: absolute;
-      bottom: var(--pad);
-      right: var(--pad);
+      bottom: 0;
+      right: 0;
       // left: var(--pad);
       max-height: 50%;
       padding: calc(var(--pad) / 3) calc(var(--pad) / 1.3);
@@ -146,7 +147,7 @@ export default {
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
       border-radius: 3px;
       text-align: right;
-      line-height: 1.3;
+      line-height: 1.4;
 
       &::-webkit-scrollbar {
         width: 8px;

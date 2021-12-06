@@ -6,7 +6,7 @@
       class="theme-switcher__label"
     >
       <span class="theme-switcher__title">{{ theme.title }}</span>
-      <input type="radio" name="theme" :value="theme.alias" :id="theme.alias" />
+      <input type="radio" name="theme" :value="theme.alias" :id="theme.alias" :checked="theme.alias == 'dark-theme' ? true : false" />
     </label>
   </form>
 </template>
