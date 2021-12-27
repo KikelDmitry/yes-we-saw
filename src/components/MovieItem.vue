@@ -1,8 +1,8 @@
 <template>
-  <article class="movie" ref="card" :class="movieCardClass" @click="focus">
+  <article class="movie" :class="movieCardClass" ref="card" @click="focus">
     <h2 class="movie__title">{{ title }}</h2>
     <div class="movie__date">{{ date }}</div>
-    <div class="movie__type">{{ movieType(type) }}</div>
+    <div class="movie__type">{{ movieType }}</div>
     <div v-if="rewatch" class="movie__rewatch">Пересмотрен</div>
     <div v-if="alone" class="movie__alone">В одиночку</div>
     <div v-if="note && noteIsVisible" @click="toggleNote" class="movie__note">
@@ -27,7 +27,7 @@
         <control-item :method="inProgress" descr="Редактировать"
           >✏️</control-item
         >
-        <control-item :method="inProgress" descr="Удалить">❌</control-item>
+        <control-item :method="deleteMovie" descr="Удалить">❌</control-item>
       </div>
     </div>
   </article>
@@ -79,18 +79,19 @@ export default {
     movieCardClass() {
       return this.noteIsVisible ? "is-blured" : "";
     },
+    movieType() {
+      return this.$store.getters.movieTypes[this.type];
+    },
   },
   methods: {
-    movieType(movie) {
-      const types = {
-        movie: "Фильм",
-        series: "Сериал",
-      };
-      return types[movie];
-    },
-    toggleNote(e) {
+    toggleNote() {
       this.noteIsVisible = !this.noteIsVisible;
-      console.log(e);
+    },
+    deleteMovie() {
+      alert(this.$store.state.movieList.forEach((item, idx) => {
+        console.log(item)
+        return this.$store.state.movieList[idx]['title']
+      }));
     },
     inProgress() {
       alert("Feature in progess");
@@ -101,7 +102,8 @@ export default {
 
 <style lang="scss" scoped>
 .movie {
-  --pad: 15px;
+  --font-size: 1rem;
+  --pad: 1em;
 
   display: flex;
   flex-direction: column;
@@ -113,6 +115,7 @@ export default {
   background-color: $color-bg;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   border-radius: 6px;
+  font-size: var(--font-size);
 
   &.is-blured {
     & > *:not(.movie__note) {
@@ -121,13 +124,16 @@ export default {
     }
   }
   @include df(560) {
-    --pad: 10px;
+    --pad: calc(var(--font-size) / 2);
   }
 
   &__title {
     font-size: 1.3rem;
     line-height: 1;
     margin-bottom: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &__note {
     position: absolute;

@@ -1,25 +1,22 @@
 <template>
   <div class="wrapper">
-    <div class="app-title">YES, WE SAW!</div>
-    <the-nav></the-nav>
+    <the-header></the-header>
     <router-view></router-view>
     <theme-switcher></theme-switcher>
   </div>
 </template>
 
 <script>
-import TheNav from "./components/TheNav.vue";
+import TheHeader from "./components/TheHeader.vue";
 import ThemeSwitcher from "./components/ThemeSwitcher.vue";
 
 export default {
   components: {
-    TheNav,
+    TheHeader,
     ThemeSwitcher,
   },
   data() {
-    return {
-      
-    };
+    return {};
   },
   methods: {
     getMovies() {
@@ -27,8 +24,8 @@ export default {
         .then((res) => res.json())
         .then((json) => {
           this.$store.state.movieList = json;
-          this.$store.state.isLoaded = true;
         })
+        .then((this.$store.state.listLoaded = true))
         .catch((err) => console.log(err));
     },
   },
@@ -53,11 +50,6 @@ body {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-}
-.app-title {
-  margin: 0.5em 0;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
+  padding: 10px;
 }
 </style>

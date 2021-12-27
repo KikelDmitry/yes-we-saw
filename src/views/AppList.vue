@@ -1,6 +1,6 @@
 <template>
   <sort-controls></sort-controls>
-  <movies-list v-if="$store.state.isLoaded"></movies-list>
+  <movies-list></movies-list>
 </template>
 
 <script>

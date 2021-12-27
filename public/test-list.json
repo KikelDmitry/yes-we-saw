@@ -57,5 +57,14 @@
 		"rewatch": true,
 		"alone": false,
 		"note": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quia alias fugiat possimus! Sit voluptatum atque id nesciunt asperiores in beatae cum placeat nisi, et assumenda modi perferendis quam velit quibusdam ullam officia expedita quaerat. Vero in facilis, fugiat laborum optio eaque illum minus quasi unde? Ducimus minus eaque accusantium!"
+	},
+	{
+		"id": 7,
+		"title": "Доктор Стрейнджлав, или Как я научился не волноваться и полюбил атомную бомбу",
+		"date": "31-11-2021",
+		"type": "movie",
+		"rewatch": true,
+		"alone": false,
+		"note": "Из-за безумного генерала США и СССР оказываются на грани ядерной войны. Абсурдистская комедия Стэнли Кубрика"
 	}
 ]
