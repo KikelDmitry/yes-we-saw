@@ -30,7 +30,8 @@ h6,
 button,
 ol,
 ul,
-fieldset {
+fieldset,
+legend {
 	margin: 0;
 	padding: 0;
 }
@@ -64,4 +65,7 @@ button {
 	padding: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+fieldset {
+	border: 0;
 }

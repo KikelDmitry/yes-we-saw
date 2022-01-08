@@ -26,6 +26,6 @@ export default createStore({
     },
     movieTypes: state => {
       return state.config.movieTypes;
-    }
+    },
   }
 })

@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <h1 class="header__title">{{ projectName }}</h1>
+    <h1 class="header__title">{{ appName }}</h1>
     <the-nav></the-nav>
   </header>
 </template>
@@ -14,7 +14,9 @@ export default {
     TheNav,
   },
   computed: {
-    ...mapGetters(["projectName"]),
+    ...mapGetters({
+      appName: "projectName",
+    }),
   },
 };
 </script>

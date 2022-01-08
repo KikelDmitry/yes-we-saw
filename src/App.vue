@@ -36,11 +36,18 @@ export default {
 </script>
 
 <style lang="scss">
+:root {
+  --form-row-height: 60px;
+
+  @include df(420) {
+    --form-row-height: 44px;
+  }
+}
 html {
   font-family: sans-serif;
 }
 body {
-  min-height: 200vh;
+  min-height: 100vh;
   background-color: $color-bg;
   color: $color-fg;
 }

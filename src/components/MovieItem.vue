@@ -1,6 +1,6 @@
 <template>
   <article class="movie" :class="movieCardClass" ref="card" @click="focus">
-    <h2 class="movie__title">{{ title }}</h2>
+    <h2 class="movie__title" :title="title">{{ title }}</h2>
     <div class="movie__date">{{ date }}</div>
     <div class="movie__type">{{ movieType }}</div>
     <div v-if="rewatch" class="movie__rewatch">Пересмотрен</div>
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="movie__controls">
-      <div class="movie__controls-block">
+      <div class="movie__control">
         <control-item
           :link="kpLink"
           title="Искать на кинопоиске"
@@ -23,11 +23,13 @@
           >ℹ️</control-item
         >
       </div>
-      <div class="movie__controls-block movie__controls-block--main">
+      <div class="movie__control">
         <control-item :method="inProgress" descr="Редактировать"
-          >✏️</control-item
-        >
-        <control-item :method="deleteMovie" descr="Удалить">❌</control-item>
+          ><img src="@/assets/img/edit.svg" alt="Edit icon"
+        /></control-item>
+        <control-item :method="deleteMovie" descr="Удалить"
+          ><img src="@/assets/img/delete.svg" alt="Trash icon"
+        /></control-item>
       </div>
     </div>
   </article>
@@ -37,8 +39,7 @@
 import ControlItem from "./ControlItem.vue";
 
 export default {
-  components: { ControlItem },
-  componenets: {
+  components: {
     ControlItem,
   },
   props: {
@@ -87,12 +88,7 @@ export default {
     toggleNote() {
       this.noteIsVisible = !this.noteIsVisible;
     },
-    deleteMovie() {
-      alert(this.$store.state.movieList.forEach((item, idx) => {
-        console.log(item)
-        return this.$store.state.movieList[idx]['title']
-      }));
-    },
+    deleteMovie() {},
     inProgress() {
       alert("Feature in progess");
     },
@@ -185,15 +181,18 @@ export default {
     display: flex;
     flex-direction: column;
 
-    &-block {
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
-
-      &--main {
-        margin-top: auto;
-      }
+    &__control {
+      flex: 1 1 auto;
     }
+    // &-block {
+    //   &:not(:last-child) {
+    //     margin-bottom: 10px;
+    //   }
+
+    //   &--main {
+    //     margin-top: auto;
+    //   }
+    // }
   }
 }
 </style>

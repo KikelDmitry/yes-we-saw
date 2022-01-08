@@ -1,6 +1,35 @@
 <template>
   <form @submit.prevent="addMovie" class="form">
-    <fieldset class="form__group">
+    <form-row title="Title">
+      <form-text type="text" v-model="input.title"></form-text>
+    </form-row>
+    <form-row title="Date">
+      <form-date :max="params.maxDate" v-model="input.date"></form-date>
+    </form-row>
+    <form-row title="Type">
+      <form-radio
+        :values="['movie', 'series']"
+        v-model="input.type"
+      ></form-radio>
+    </form-row>
+    <form-row title="Rewatch">
+      <form-checkbox v-model="input.rewatch"></form-checkbox>
+    </form-row>
+    <form-row title="Alone">
+      <form-checkbox v-model="input.alone"></form-checkbox>
+    </form-row>
+    <form-row title="Notes">
+      <form-textarea v-model="input.note"></form-textarea>
+    </form-row>
+    <!-- <fieldset class="form-row">
+    <legend class="form-row__legend">
+      <label class="form-row__label" :for="id">
+        {{ title }}
+      </label>
+    </legend>
+    <form-text :id="id"></form-text>
+  </fieldset> -->
+    <!-- <fieldset class="form__group">
       <legend class="form__title">Title</legend>
       <label class="form__label">
         <input v-model="input.title" type="text" class="form__text" />
@@ -55,13 +84,30 @@
         <span class="form__label-title">Notes</span>
         <textarea v-model="input.note"></textarea>
       </label>
-    </fieldset>
-    <button type="submit">Add movie</button>
+    </fieldset> -->
+    <form-button type="submit">Add Movie</form-button>
   </form>
 </template>
 
 <script>
+import FormRow from "./forms/FormRow.vue";
+import FormText from "./forms/FormText.vue";
+import FormDate from "./forms/FormDate.vue";
+import FormRadio from "./forms/FormRadio.vue";
+import FormCheckbox from "./forms/FormCheckbox.vue";
+import FormTextarea from "./forms/FormTextarea.vue";
+import FormButton from "./forms/FormButton.vue";
+
 export default {
+  components: {
+    FormRow,
+    FormText,
+    FormDate,
+    FormRadio,
+    FormCheckbox,
+    FormTextarea,
+    FormButton,
+  },
   data() {
     return {
       params: {
@@ -84,11 +130,14 @@ export default {
       alert("Movie added");
     },
   },
+  mounted() {},
 };
 </script>
 
 <style lang="scss" scoped>
 .form {
+  max-width: 500px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 
