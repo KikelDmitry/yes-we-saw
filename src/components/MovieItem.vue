@@ -17,7 +17,7 @@
           title="Искать на кинопоиске"
           target="_blank"
         >
-          <img src="@/assets/img/kinopoisk.svg" alt="Kinopoisk logo" />
+          <img src="@/assets/img/icons/kinopoisk.svg" alt="Kinopoisk logo" />
         </control-item>
         <control-item v-if="note" :method="toggleNote" class="movie__show-note"
           >ℹ️</control-item
@@ -25,10 +25,10 @@
       </div>
       <div class="movie__control">
         <control-item :method="inProgress" descr="Редактировать"
-          ><img src="@/assets/img/edit.svg" alt="Edit icon"
+          ><img src="@/assets/img/icons/edit.svg" alt="Edit icon"
         /></control-item>
         <control-item :method="deleteMovie" descr="Удалить"
-          ><img src="@/assets/img/delete.svg" alt="Trash icon"
+          ><img src="@/assets/img/icons/delete.svg" alt="Trash icon"
         /></control-item>
       </div>
     </div>

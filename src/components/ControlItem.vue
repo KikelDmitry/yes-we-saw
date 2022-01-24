@@ -29,7 +29,7 @@ export default {
     method: {
       type: Function,
       default: () =>
-        console.log(
+        console.error(
           "Function not defined in :method of <control-item></control-item>"
         ),
       required: false,

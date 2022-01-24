@@ -1,17 +1,19 @@
 <template>
-  <sort-controls></sort-controls>
-  <movies-list></movies-list>
+    <movies-list-controls></movies-list-controls>
+    <movies-list></movies-list>
 </template>
 
 <script>
-import SortControls from "../components/SortControls.vue";
+import MoviesListControls from "../components/MoviesListControls.vue";
 import MoviesList from "../components/MoviesList.vue";
 
 export default {
   components: {
-    SortControls,
+    MoviesListControls,
     MoviesList,
   },
-  
 };
 </script>
+
+<style lang="scss" scoped>
+</style>

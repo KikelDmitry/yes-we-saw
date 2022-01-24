@@ -7,7 +7,7 @@ export default createStore({
       movieTypes: {
         movie: 'Фильм',
         series: 'Сериал',
-      }
+      },
     },
     listLoaded: false,
   },

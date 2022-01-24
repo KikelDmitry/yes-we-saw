@@ -11,7 +11,7 @@
       ></movie-item>
     </li>
   </ul>
-  <div v-else class="loader" style="font-size: 72px;">Loading</div>
+  <div v-else class="loader" style="font-size: 72px">Loading</div>
 </template>
 
 <script>
@@ -24,7 +24,9 @@ export default {
   },
   computed: {
     movies() {
-      return this.$store.state.movieList;
+      return this.$store.state.searchList
+        ? this.$store.state.searchList
+        : this.$store.state.movieList;
     },
     ...mapGetters(["listLoaded"]),
   },
@@ -33,6 +35,8 @@ export default {
 
 <style lang="scss" scoped>
 .movies-list {
+  --cols: 3;
+
   max-width: 1200px;
   margin: 0 auto;
   padding: 5px;
@@ -40,8 +44,6 @@ export default {
   flex-flow: row wrap;
 
   &__item {
-    --cols: 3;
-
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: calc(100% / var(--cols));
@@ -57,6 +59,9 @@ export default {
       flex-grow: 1;
       flex-shrink: 1;
     }
+  }
+  &.rows {
+    --cols: 1;
   }
 }
 </style>

@@ -21,71 +21,10 @@
     <form-row title="Notes">
       <form-textarea v-model="input.note"></form-textarea>
     </form-row>
-    <!-- <fieldset class="form-row">
-    <legend class="form-row__legend">
-      <label class="form-row__label" :for="id">
-        {{ title }}
-      </label>
-    </legend>
-    <form-text :id="id"></form-text>
-  </fieldset> -->
-    <!-- <fieldset class="form__group">
-      <legend class="form__title">Title</legend>
-      <label class="form__label">
-        <input v-model="input.title" type="text" class="form__text" />
-      </label>
-    </fieldset>
-    <fieldset class="form__group">
-      <legend class="form__title">Date</legend>
-      <label class="form__label">
-        <span class="visually-hidden">Date</span>
-        <input
-          v-model="input.date"
-          type="date"
-          class="form__date"
-          :max="params.maxDate"
-        />
-      </label>
-    </fieldset>
-    <fieldset class="form__group">
-      <legend class="form__title">Type</legend>
-      <label class="form__label">
-        <input
-          v-model="input.type"
-          type="radio"
-          name="type"
-          value="movie"
-          checked
-        />
-        <span class="form__label-title">Movie</span>
-      </label>
-      <label class="form__label">
-        <input v-model="input.type" type="radio" name="type" value="series" />
-        <span class="form__label-title">Series</span>
-      </label>
-    </fieldset>
-    <fieldset class="form__group">
-      <legend class="form__title">Rewatch</legend>
-      <label class="form__label">
-        <input v-model="input.rewatch" type="checkbox" />
-        <span class="form__label-title">Rewatch</span>
-      </label>
-    </fieldset>
-    <fieldset class="form__group">
-      <legend class="form__title">Alone</legend>
-      <label class="form__label">
-        <input v-model="input.alone" type="checkbox" />
-        <span class="form__label-title">Alone</span>
-      </label>
-    </fieldset>
-    <fieldset class="form__group">
-      <legend class="form__title">Notes</legend>
-      <label class="form__label">
-        <span class="form__label-title">Notes</span>
-        <textarea v-model="input.note"></textarea>
-      </label>
-    </fieldset> -->
-    <form-button type="submit">Add Movie</form-button>
+    <div class="form__group">
+      <form-button class="form__item" type="submit">Add Movie</form-button>
+      <form-button class="form__item" type="reset">Clear form</form-button>
+    </div>
   </form>
 </template>
 
@@ -143,10 +82,10 @@ export default {
 
   &__group {
     display: flex;
+    gap: 0 15px;
   }
-  &__title {
-  }
-  &__text {
+  &__item {
+    flex: 1 1 auto;
   }
 }
 </style>
