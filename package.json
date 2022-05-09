@@ -1,9 +1,9 @@
 {
-  "name": "yes-we-saw-2",
+  "name": "yes-we-saw",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -22,7 +22,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.32.7",
-    "sass-loader": "^12.0.0"
+    "sass-loader": "^8.0.2"
   },
   "eslintConfig": {
     "root": true,

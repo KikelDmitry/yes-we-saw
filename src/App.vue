@@ -1,30 +1,89 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="root">
+    <div class="root__inner">
+      <the-header id="header"></the-header>
+      <main-menu></main-menu>
+      <router-view></router-view>
+      <to-top></to-top>
+    </div>
+  </div>
 </template>
 
+
+<script>
+import TheHeader from "@/components/TheHeader.vue";
+import MainMenu from "@/components/MainMenu.vue";
+import ToTop from "@/components/ToTop.vue";
+
+export default {
+  components: {
+    TheHeader,
+    MainMenu,
+    ToTop,
+  },
+  mounted() {
+    setTimeout(() => {
+      fetch("test-list.json")
+        .then((res) => res.json())
+        .then((json) => {
+          this.$store.state.moviesList = json;
+        })
+        .then(this.$store.state.isLoading = false)
+        .catch((err) => console.log(err));
+    }, 0)
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+html {
+  font-family: "Ubuntu", sans-serif;
 }
 
-nav {
-  padding: 30px;
+body {
+  background-color: $color-bg;
+  background-image: linear-gradient(135deg,
+      lighten($color-bg, 3%),
+      darken($color-bg, 3%));
+  color: $color-fg;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.root {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
 
-    &.router-link-exact-active {
-      color: #42b983;
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: gray;
+
+    &-thumb {
+      background-color: black;
     }
+  }
+
+  &__inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    align-content: flex-start;
+  }
+}
+
+.resizer {
+  max-width: 1220px;
+  margin: 0 auto;
+
+  &--small {
+    max-width: 768px;
+  }
+
+  &--huge {
+    max-width: 2560px;
   }
 }
 </style>
