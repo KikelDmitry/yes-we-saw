@@ -22,16 +22,15 @@ export default {
     ToTop,
   },
   mounted() {
-    setTimeout(() => {
-      fetch("test-list.json")
-        .then((res) => res.json())
-        .then((json) => {
-          this.$store.state.moviesList = json;
-        })
-        .then(this.$store.state.isLoading = false)
-        .catch((err) => console.log(err));
-    }, 0)
+    fetch("test-list.json")
+      .then((res) => res.json())
+      .then((json) => {
+        this.$store.state.moviesList = json;
+      })
+      .then(this.$store.state.isLoading = false)
+      .catch((err) => console.log(err));
   },
+
 };
 </script>
 
