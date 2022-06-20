@@ -1,9 +1,10 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
 
 export default createStore({
   state: {
     isLoading: true,
     movieFields: [
+      // "count",
       "title",
       "date",
       "series",

@@ -1,28 +1,55 @@
 <template>
-  <tr>
-    <!-- <td v-for="(val, key, idx) in movie" :key="idx" class="cell" :class="`cell--${key.toLowerCase()}`">
-      {{ outputProp(val) }}
-    </td> -->
-    <td v-for="field in fields" :key="field" class="cell" :class="`cell--${field.toLowerCase()}`">
-      {{ outputProp(movie[field]) }}
+  <tr class="row">
+    <td
+      v-for="(field, idx) in fields"
+      :key="field"
+      class="cell"
+      :class="`cell--${field.toLowerCase()}`"
+      :data-num="idx === 0 ? num : false"
+    >
+      <!-- if title -->
+      <!-- <to-imbd v-if="field === 'title'" :title="movie[field]" class="cell__kp">
+        {{ movie[field] }}
+      </to-imbd> -->
+
+      <!-- if note -->
+      <input
+        v-if="field === 'note'"
+        type="text"
+        class="cell__input cell__content"
+        :value="movie[field]"
+      />
+      <!-- <span v-else> -->
+      <span v-else class="cell__content">
+        {{ outputProp(movie[field]) }}
+      </span>
     </td>
   </tr>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters } from "vuex";
+// import ToImbd from "../ToImbd.vue";
 
 export default {
-  props: ["movie"],
+  components: {
+    // ToImbd,
+  },
+  props: ["movie", "num"],
+  data() {
+    return {
+      icon: require("../../assets/img/kinopoisk.svg"),
+    };
+  },
   computed: {
     ...mapGetters({
-      fields: 'movieFields'
+      fields: "movieFields",
     }),
   },
   methods: {
     outputProp(prop) {
       if (typeof prop == "boolean") {
-        return prop === true ? "V" : "X";
+        return prop === true ? "x" : null;
       } else {
         return prop;
       }
@@ -33,28 +60,82 @@ export default {
 
 <style lang="scss" scoped>
 .cell {
-  padding: 7px 10px;
+  $cell-padding: 2px 10px;
+  padding: $cell-padding;
   height: 32px;
   white-space: nowrap;
   border-radius: 4px;
-
-  &--title {
-    max-width: 220px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  transition-property: background-color, color;
+  transition-timing-function: linear;
 
   &--rewatch,
   &--series,
-  &--alone {
-    width: 85px;
+  &--alone,
+  &--date {
+    width: 0;
     text-align: center;
   }
+  &--title {
+    position: relative;
+    max-width: 220px;
 
+    &::before {
+      content: attr(data-num);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: inherit;
+      border-radius: inherit;
+      transform: translateX(calc((100% + 4px) * -1));
+      background-color: inherit;
+      color: $color-fg;
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.9em;
+    }
+  }
   &--note {
-    max-width: 200px;
+    max-width: 100px;
+    padding: 0;
+    overflow: hidden;
+  }
+  &:hover {
+    background-color: lighten($color-bg, 14%);
+    color: #fff;
+  }
+  &__kp {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 2px 10px;
+  }
+  &__content {
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  &__input {
+    background-color: inherit;
+    color: inherit;
+    border: 0;
+    padding: $cell-padding;
+    transition: background-color 200ms;
+
+    &:focus {
+      background-color: lighten($color-bg, 35%);
+      outline: 0;
+    }
+  }
+}
+.row {
+  position: relative;
 }
 </style>

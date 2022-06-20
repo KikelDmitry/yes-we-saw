@@ -69,13 +69,14 @@ export default {
     315deg,
     var(--color-one),
     var(--color-two),
+    var(--color-two),
     var(--color-one)
   );
   color: #000;
 
   &.is-active {
-    --color-one: #0000bd;
-    --color-two: #fff;
+    --color-one: rgba(0, 0, 0, 0.7);
+    --color-two: rgb(230, 230, 255);
   }
 }
 </style>

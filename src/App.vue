@@ -21,16 +21,23 @@ export default {
     MainMenu,
     ToTop,
   },
+  methods: {
+    sortBy(arr) {
+      return arr.sort((a, b) => a.title > b.title);
+    },
+  },
   mounted() {
-    fetch("test-list.json")
+    fetch("list.json")
       .then((res) => res.json())
       .then((json) => {
-        this.$store.state.moviesList = json;
+        return this.sortBy(json);
       })
-      .then(this.$store.state.isLoading = false)
+      .then((list) => {
+        this.$store.state.moviesList = list;
+      })
+      .then((this.$store.state.isLoading = false))
       .catch((err) => console.log(err));
   },
-
 };
 </script>
 
@@ -41,9 +48,11 @@ html {
 
 body {
   background-color: $color-bg;
-  background-image: linear-gradient(135deg,
-      lighten($color-bg, 3%),
-      darken($color-bg, 3%));
+  background-image: linear-gradient(
+    135deg,
+    lighten($color-bg, 3%),
+    darken($color-bg, 3%)
+  );
   color: $color-fg;
 }
 
@@ -62,7 +71,6 @@ body {
   }
 
   &__inner {
-    width: 100%;
     height: 100%;
     max-width: 1220px;
     margin: 0 auto;
