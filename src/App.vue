@@ -27,13 +27,13 @@ export default {
     },
   },
   mounted() {
-    fetch("list.json")
+    fetch("movies.json")
       .then((res) => res.json())
       .then((json) => {
         return this.sortBy(json);
       })
       .then((list) => {
-        this.$store.state.moviesList = list;
+        this.$store.state.moviesList = list.sort((a,b) => a['date'] < b['date'] ? 1 : -1);
       })
       .then((this.$store.state.isLoading = false))
       .catch((err) => console.log(err));

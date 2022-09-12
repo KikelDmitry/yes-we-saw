@@ -1,6 +1,11 @@
 <template>
   <tr class="table__row table__row--heading">
-    <th v-for="field in fields" :key="field" class="cell">
+    <th
+      v-for="field in fields"
+      :key="field"
+      class="cell"
+      :class="[{ 'is-sort': sortedBy == field }, 'is-' + dir.toLowerCase()]"
+    >
       {{ field }}
       <button class="sort-by" type="button" @click="sortBy(field)">
         <span class="visually-hidden"> Sort by {{ field }} </span>
@@ -13,6 +18,12 @@
 import { mapGetters } from "vuex";
 
 export default {
+  data() {
+    return {
+      dir: "ASC",
+      sortedBy: "",
+    };
+  },
   computed: {
     ...mapGetters({
       fields: "movieFields",
@@ -20,10 +31,17 @@ export default {
   },
   methods: {
     sortBy(field) {
-      console.log(field);
-      this.$store.state.moviesList = this.$store.state.moviesList.sort((a,b)=> {
-        return a[field] < b[field] ? 1 : -1
-      })
+      this.sortedBy = field;
+      this.dir === "ASC" ? (this.dir = "DESC") : (this.dir = "ASC");
+      this.$store.state.moviesList = this.$store.state.moviesList.sort(
+        (a, b) => {
+          if (this.dir === "ASC") {
+            return a[field] > b[field] ? 1 : -1;
+          } else {
+            return a[field] < b[field] ? 1 : -1;
+          }
+        }
+      );
     },
   },
 };
@@ -32,12 +50,11 @@ export default {
 <style lang="scss" scoped>
 .cell {
   padding: 7px 10px;
+  position: relative;
 
   &:first-child {
-    position: relative;
-
     &::before {
-      content: '#';
+      content: "#";
       position: absolute;
       top: 0;
       left: 0;
@@ -49,6 +66,24 @@ export default {
       transform: translateX(calc((100% + 4px) * -1));
       text-align: center;
       background-color: $color-bg;
+    }
+  }
+  &.is-sort {
+    background-color: red;
+
+    &::after {
+      position: absolute;
+      right: 0;
+    }
+    &.is-asc {
+      &::after {
+        content: "↓";
+      }
+    }
+    &.is-desc {
+      &::after {
+        content: "↑";
+      }
     }
   }
 }
