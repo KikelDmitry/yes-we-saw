@@ -1,5 +1,5 @@
 <template>
-  <ul v-if="listLoaded" class="movies-list">
+  <ul v-if="!isLoading" class="movies-list">
     <li class="movies-list__item" v-for="movie in movies" :key="movie.id">
       <movie-item
         :title="movie.title"
@@ -24,11 +24,13 @@ export default {
   },
   computed: {
     movies() {
-      return this.$store.state.searchList
-        ? this.$store.state.searchList
+      return this.$store.state.filteredMovies
+        ? this.$store.state.filteredMovies
         : this.$store.state.movieList;
     },
-    ...mapGetters(["listLoaded"]),
+    ...mapGetters({
+      isLoading: 'isLoading',
+    }),
   },
 };
 </script>

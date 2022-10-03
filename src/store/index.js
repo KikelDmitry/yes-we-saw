@@ -9,7 +9,9 @@ export default createStore({
         series: 'Сериал',
       },
     },
-    listLoaded: false,
+    listLoaded: true,
+    isLoading: false,
+    filteredMovies: null,
   },
   mutations: {
   },
@@ -27,5 +29,8 @@ export default createStore({
     movieTypes: state => {
       return state.config.movieTypes;
     },
-  }
+    isLoading: state => {
+      return state.isLoading
+    }
+  },
 })

@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     search() {
-      this.$store.state.searchList = this.$store.state.movieList.filter(
+      this.$store.state.filteredMovies = this.$store.state.movieList.filter(
         (item) => {
           return item.title
             .toLowerCase()
@@ -31,7 +31,7 @@ export default {
         }
       );
       if (this.input === "") {
-        this.$store.state.searchList = false;
+        this.$store.state.searchList = null;
       }
       // let searchList = this.$store.state.searchList;
     },
