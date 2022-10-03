@@ -69,7 +69,6 @@ export default {
     }
   }
   &.is-sort {
-    background-color: red;
 
     &::after {
       position: absolute;
