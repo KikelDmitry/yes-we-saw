@@ -37,8 +37,10 @@ export default {
         (a, b) => {
           if (this.dir === "ASC") {
             return a[field] > b[field] ? 1 : -1;
-          } else {
+          } else if (this.dir === "DESC") {
             return a[field] < b[field] ? 1 : -1;
+          } else {
+            throw new Error('Sort direction is incorrect')
           }
         }
       );
@@ -69,7 +71,6 @@ export default {
     }
   }
   &.is-sort {
-
     &::after {
       position: absolute;
       right: 0;

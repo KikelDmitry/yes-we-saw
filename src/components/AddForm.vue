@@ -1,13 +1,26 @@
 <template>
-	<form @submit="addMovie" class="add-form">
-    ADD FORM
-	</form>
+  <form @submit="addMovie" class="add-form">
+    <input type="text" v-model="input.date" @input="mask()" />
+  </form>
 </template>
 
 <script>
 export default {
-	
-}
+  data() {
+    return {
+      input: {
+        date: null,
+      },
+    };
+  },
+  methods: {
+    mask() {
+      if (this.input.date.length % 1 == 0) {
+        this.input.date += ".";
+      }
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -16,7 +29,6 @@ export default {
     display: block;
 
     &[type="text"] {
-
     }
   }
 }

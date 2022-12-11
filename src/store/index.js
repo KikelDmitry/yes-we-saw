@@ -3,6 +3,7 @@ import { createStore } from 'vuex';
 export default createStore({
   state: {
     isLoading: true,
+    moviesList: [],
     movieFields: [
       // "count",
       "title",
