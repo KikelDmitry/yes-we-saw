@@ -1,8 +1,6 @@
 <template>
-  <a :href="link" class="link" target="_blank" :title="`Search in Kinopoisk`">
-    <slot>
-      K
-    </slot>
+  <a :href="link" class="imdb-link" target="_blank" :title="`Search in Kinopoisk`">
+    <slot> K </slot>
   </a>
 </template>
 
@@ -20,5 +18,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
+.imdb-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  @include dottedEnd;
+}
 </style>

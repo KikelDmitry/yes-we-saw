@@ -1,8 +1,8 @@
 <template>
   <div class="preloader" v-if="$store.state.isLoading">
-    <div class="preloader__icon">
+    <!-- <div class="preloader__icon">
       <img width="150" height="150" :src="image" alt="spin lines">
-    </div>
+    </div> -->
   </div>
 </template>
 

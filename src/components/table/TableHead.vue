@@ -4,7 +4,11 @@
       v-for="field in fields"
       :key="field"
       class="cell"
-      :class="[{ 'is-sort': sortedBy == field }, 'is-' + dir.toLowerCase()]"
+      :class="[
+        { 'is-sort': sortedBy == field },
+        'is-' + dir.toLowerCase(),
+        'cell--' + field,
+      ]"
     >
       {{ field }}
       <button class="sort-by" type="button" @click="sortBy(field)">
@@ -40,7 +44,7 @@ export default {
           } else if (this.dir === "DESC") {
             return a[field] < b[field] ? 1 : -1;
           } else {
-            throw new Error('Sort direction is incorrect')
+            throw new Error("Sort direction is incorrect");
           }
         }
       );
@@ -68,6 +72,21 @@ export default {
       transform: translateX(calc((100% + 4px) * -1));
       text-align: center;
       background-color: $color-bg;
+    }
+  }
+  &--title {
+    @include df(768) {
+      text-align: left;
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      // background-color: inherit;
+      background-image: linear-gradient(
+        90deg,
+        darken($color-bg, 1%) 0%,
+        darken($color-bg, 0.2%) 80%,
+        transparent 100%
+      );
     }
   }
   &.is-sort {

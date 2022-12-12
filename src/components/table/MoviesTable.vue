@@ -36,11 +36,15 @@ export default {
 }
 .table {
   width: 100%;
-  min-width: 768px;
+  min-width: 728px;
   padding-left: 50px;
   border-collapse: separate;
   border-spacing: 4px;
   font-size: 18px;
+
+  @include df(768) {
+    font-size: 16px;
+  }
 
   &__row {
     transition: all 100ms 100ms;
@@ -59,6 +63,10 @@ export default {
         darken($color-bg, 1%) 100%
       );
       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+
+      @include df(768) {
+        font-size: 18px;
+      }
     }
     &:not(&--heading) {
       background-image: linear-gradient(

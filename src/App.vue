@@ -30,10 +30,12 @@ export default {
     fetch("movies.json")
       .then((res) => res.json())
       .then((json) => {
-        return this.sortBy(json);
+        return json;
       })
       .then((list) => {
-        this.$store.state.moviesList = list.sort((a,b) => a['date'] < b['date'] ? 1 : -1);
+        this.$store.state.moviesList = list.sort((a, b) =>
+          a["date"] < b["date"] ? 1 : -1
+        );
       })
       .then((this.$store.state.isLoading = false))
       .catch((err) => console.log(err));
@@ -60,24 +62,41 @@ body {
   width: 100%;
   height: 100vh;
   overflow: auto;
-
+  
   &::-webkit-scrollbar {
-    width: 10px;
-    background-color: gray;
+    width: 16px;
 
+    &-track {
+      background-color: transparent;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+    }
     &-thumb {
-      background-color: black;
+      background-image: linear-gradient(
+        0deg,
+        $color-bg 0,
+        lighten($color-bg, 18%) 50%,
+        $color-bg 100%
+      );
+      box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+    }
+    &-corner {
+      background-color: lighten($color-bg, 25%);
     }
   }
-
   &__inner {
-    height: 100%;
     max-width: 1220px;
     margin: 0 auto;
-    padding: 0px 15px;
+    padding: 0px 10px;
     display: grid;
     grid-template-rows: auto auto 1fr;
     align-content: flex-start;
+
+    @include df(768) {
+      padding-left: 0;
+    }
   }
 }
 

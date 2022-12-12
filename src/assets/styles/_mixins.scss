@@ -8,6 +8,11 @@
 		@content;
 	}
 }
+@mixin dottedEnd {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
 @mixin absoluteFull {
   position: absolute;
   top: 0;

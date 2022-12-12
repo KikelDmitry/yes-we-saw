@@ -5,13 +5,8 @@
       :key="field"
       class="cell"
       :class="`cell--${field.toLowerCase()}`"
-      :data-num="idx === 0 ? num : false"
+      :data-num="idx === 0 ? num : null"
     >
-      <!-- if title -->
-      <!-- <to-imbd v-if="field === 'title'" :title="movie[field]" class="cell__kp">
-        {{ movie[field] }}
-      </to-imbd> -->
-
       <!-- if note -->
       <input
         v-if="field === 'note'"
@@ -19,6 +14,12 @@
         class="cell__input cell__content"
         :value="movie[field]"
       />
+
+      <!-- if title -->
+      <to-imbd v-else-if="field === 'title'" :title="movie[field]">
+        {{ outputProp(movie[field]) }}
+      </to-imbd>
+
       <!-- <span v-else> -->
       <span v-else class="cell__content">
         {{ outputProp(movie[field]) }}
@@ -29,11 +30,11 @@
 
 <script>
 import { mapGetters } from "vuex";
-// import ToImbd from "../ToImbd.vue";
+import ToImbd from "../ToImbd.vue";
 
 export default {
   components: {
-    // ToImbd,
+    ToImbd,
   },
   props: ["movie", "num"],
   data() {
@@ -64,9 +65,9 @@ export default {
 
 <style lang="scss" scoped>
 .cell {
-  $cell-padding: 2px 10px;
+  $cell-padding: 0.1em 0.55em;
   padding: $cell-padding;
-  height: 32px;
+  // height: 32px;
   white-space: nowrap;
   border-radius: 4px;
   transition-property: background-color, color;
@@ -101,6 +102,18 @@ export default {
       text-align: center;
       font-weight: 700;
       font-size: 0.9em;
+    }
+    @include df(768) {
+      position: sticky;
+      left: 0;
+      // background-color: inherit;
+      padding-right: 4%;
+      background-image: linear-gradient(
+        90deg,
+        lighten($color-bg, 10%) 0%,
+        lighten($color-bg, 10%) 85%,
+        transparent 100%
+      );
     }
   }
   &--note {

@@ -27,7 +27,6 @@ export default {
       state ? (this.visibility = true) : (this.visibility = false);
     },
     scrollToTop() {
-      console.log(this.$refs);
       document.querySelector("#header").scrollIntoView({
         behavior: "smooth",
       });

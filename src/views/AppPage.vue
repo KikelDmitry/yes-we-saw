@@ -1,16 +1,14 @@
 <template>
   <main class="content" :class="addClass">
     <slot></slot>
-    <app-preloader></app-preloader>
   </main>
 </template>
 
 <script>
-import AppPreloader from "../components/AppPreloader.vue"
+// import AppPreloader from "../components/AppPreloader.vue"
 
 export default {
   components: {
-    AppPreloader,
   },
   props: ["addClass"],
 };
