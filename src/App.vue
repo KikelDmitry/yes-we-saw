@@ -33,9 +33,7 @@ export default {
         return json;
       })
       .then((list) => {
-        this.$store.state.moviesList = list.sort((a, b) =>
-          a["date"] < b["date"] ? 1 : -1
-        );
+        this.$store.state.moviesList = list;
       })
       .then((this.$store.state.isLoading = false))
       .catch((err) => console.log(err));
@@ -62,7 +60,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: auto;
-  
+
   &::-webkit-scrollbar {
     width: 16px;
 
@@ -86,30 +84,18 @@ body {
       background-color: lighten($color-bg, 25%);
     }
   }
+
   &__inner {
     max-width: 1220px;
     margin: 0 auto;
     padding: 0px 10px;
-    display: grid;
-    grid-template-rows: auto auto 1fr;
-    align-content: flex-start;
+    // display: grid;
+    // grid-template-rows: auto auto 1fr;
+    // align-content: flex-start;
 
     @include df(768) {
-      padding-left: 0;
+      padding: 0;
     }
-  }
-}
-
-.resizer {
-  max-width: 1220px;
-  margin: 0 auto;
-
-  &--small {
-    max-width: 768px;
-  }
-
-  &--huge {
-    max-width: 2560px;
   }
 }
 </style>

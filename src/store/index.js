@@ -5,7 +5,6 @@ export default createStore({
     isLoading: true,
     moviesList: [],
     movieFields: [
-      // "count",
       "title",
       "date",
       "series",

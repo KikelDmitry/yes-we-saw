@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       dir: "ASC",
-      sortedBy: "",
+      sortedBy: "title",
     };
   },
   computed: {
@@ -50,12 +50,15 @@ export default {
       );
     },
   },
+  mounted() {
+    this.sortBy(this.sortedBy)
+  } 
 };
 </script>
 
 <style lang="scss" scoped>
 .cell {
-  padding: 7px 10px;
+  padding: 7px 14px 7px 9px;
   position: relative;
 
   &:first-child {
@@ -92,7 +95,7 @@ export default {
   &.is-sort {
     &::after {
       position: absolute;
-      right: 0;
+      right: 3px;
     }
     &.is-asc {
       &::after {

@@ -1,1421 +1,1354 @@
 [
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68d0"
-    },
     "date": "07.12.2020",
     "title": "Джентльмены",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68d1"
-    },
     "date": "01.01.2021",
     "title": "Love Actually, 2003",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68d2"
-    },
     "date": "01.01.2021",
     "title": "Ведьмина служба доставки",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68d3"
-    },
     "date": "08.01.2021",
     "title": "Девять",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68d4"
-    },
     "date": "09.01.2021",
     "title": "Омерзительная восьмерка",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68d5"
-    },
     "date": "12.01.2021",
     "title": "Властелин колец (трилогия)",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68d6"
-    },
     "date": "16.01.2021",
-    "title": "Операция \"Ы\"",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "title": "Операция \"Ы",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68d7"
-    },
     "date": "19.01.2021",
     "title": "Хоббит: неожиданное путешествие",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68d8"
-    },
     "date": "21.01.2021",
     "title": "Вивариум",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68d9"
-    },
     "date": "23.01.2021",
     "title": "Довод",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68da"
-    },
     "date": "07.02.2021",
     "title": "Быстрее, чем кролики (спектакль)",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68db"
-    },
     "date": "13.02.2021",
     "title": "Тот самый Мюнхгаузен",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68dc"
-    },
     "date": "25.02.2021",
     "title": "Топи",
-    "series": true,
-    "alone": false,
-    "rewatch": false,
+    "series": "*",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68dd"
-    },
     "date": "27.02.2021",
     "title": "Престиж",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68de"
-    },
     "date": "07.03.2021",
     "title": "Ведьма",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68df"
-    },
     "date": "08.03.2021",
     "title": "Мертвец",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68e0"
-    },
     "date": "13.03.2021",
-    "title": "Нос или заговор \"не таких\"",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "title": "Нос или заговор \"не таких",
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68e1"
-    },
     "date": "18.03.2021",
     "title": "Мёртвые души",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68e2"
-    },
     "date": "20.03.2021",
     "title": "Trainspotting",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68e3"
-    },
     "date": "21.03.2021",
     "title": "Trainspotting 2",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68e4"
-    },
     "date": "26.03.2021",
     "title": "Мертвые не умирают",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68e5"
-    },
     "date": "04.04.2021",
     "title": "Дом, который построил Свифт",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68e6"
-    },
     "date": "02.05.2021",
     "title": "Отец (2020)",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68e7"
-    },
     "date": "07.05.2021",
     "title": "Майор Гром",
-    "series": false,
-    "alone": true,
-    "rewatch": false,
+    "series": "",
+    "alone": "*",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68e8"
-    },
     "date": "11.05.2021",
     "title": "Рыбка Поньо на утесе",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68e9"
-    },
     "date": "14.05.2021",
     "title": "Навсикая из долины ветров",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68ea"
-    },
     "date": "15.05.2021",
     "title": "Со склонов Кокурико",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68eb"
-    },
     "date": "21.05.2021",
     "title": "Китобой (2020)",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68ec"
-    },
     "date": "29.05.2021",
     "title": "Армия мертвых (2021)",
-    "series": false,
-    "alone": true,
-    "rewatch": false,
+    "series": "",
+    "alone": "*",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68ed"
-    },
     "date": "30.05.2021",
     "title": "Бесславные ублюдки",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68ee"
-    },
     "date": "07.06.2021",
     "title": "Круэлла",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68ef"
-    },
     "date": "12.06.2021",
     "title": "Еще по одной",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68f0"
-    },
     "date": "17.06.2021",
     "title": "Луна",
-    "series": false,
-    "alone": true,
-    "rewatch": false,
+    "series": "",
+    "alone": "*",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68f1"
-    },
     "date": "23.06.2021",
     "title": "Джанго освобожденный",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68f2"
-    },
     "date": "25.06.2021",
     "title": "Кролик Джоджо",
-    "series": false,
-    "alone": true,
-    "rewatch": true,
+    "series": "",
+    "alone": "*",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68f3"
-    },
     "date": "02.07.2021",
     "title": "Лука",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68f4"
-    },
     "date": "04.07.2021",
     "title": "Дикие истории",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68f5"
-    },
     "date": "20.07.2021",
     "title": "Черное зеркало",
-    "series": true,
-    "alone": false,
-    "rewatch": true,
+    "series": "*",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68f6"
-    },
     "date": "20.07.2021",
     "title": "Унесённые призраками",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68f7"
-    },
     "date": "25.07.2021",
     "title": "Калина красная",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68f8"
-    },
     "date": "26.07.2021",
     "title": "Любовь и голуби",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68f9"
-    },
     "date": "28.07.2021",
     "title": "Пять сантиметров в секунду",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68fa"
-    },
     "date": "08.08.2021",
     "title": "Отряд самоубийц: Миссия на вылет",
-    "series": false,
-    "alone": true,
-    "rewatch": false,
+    "series": "",
+    "alone": "*",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68fb"
-    },
     "date": "19.08.2021",
     "title": "Настоящий детектив (сезон 1-3)",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68fc"
-    },
     "date": "30.08.2021",
     "title": "Вторая жизнь Уве",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68fd"
-    },
     "date": "10.09.2021",
     "title": "Большая секунда",
-    "series": true,
-    "alone": false,
-    "rewatch": false,
+    "series": "*",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68fe"
-    },
     "date": "11.09.2021",
     "title": "Карты, деньги, 2 ствола",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc68ff"
-    },
     "date": "24.09.2021",
     "title": "Фонтан (2006)",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6900"
-    },
     "date": "25.09.2021",
     "title": "Аннигиляция",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6901"
-    },
     "date": "04.10.2021",
     "title": "Real Guy",
-    "series": false,
-    "alone": true,
-    "rewatch": false,
+    "series": "",
+    "alone": "*",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6902"
-    },
     "date": "19.10.2021",
     "title": "Электрические сны",
-    "series": true,
-    "alone": false,
-    "rewatch": false,
+    "series": "*",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6903"
-    },
     "date": "21.10.2021",
     "title": "Легенда о Зеленом Рыцаре",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6904"
-    },
     "date": "29.10.2021",
     "title": "Собачье сердце",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6905"
-    },
     "date": "13.11.2021",
     "title": "Весь Жванецкий",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6906"
-    },
     "date": "14.11.2021",
     "title": "Клетка",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6907"
-    },
     "date": "20.11.2021",
     "title": "Аркейн",
-    "series": true,
-    "alone": true,
-    "rewatch": false,
+    "series": "*",
+    "alone": "*",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6908"
-    },
     "date": "21.11.2021",
     "title": "Бриллиантовая рука",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6909"
-    },
     "date": "07.12.2021",
     "title": "Последняя дуэль",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc690a"
-    },
     "date": "12.12.2021",
     "title": "Прошлой ночью в Сохо",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc690b"
-    },
     "date": "15.12.2021",
     "title": "Рыцари справедливости",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc690c"
-    },
     "date": "18.12.2021",
     "title": "Резня",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc690d"
-    },
     "date": "21.12.2021",
     "title": "Французский вестник",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": "не досмотрели"
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc690e"
-    },
     "date": "22.12.2021",
     "title": "Морозко",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc690f"
-    },
     "date": "24.12.2021",
     "title": "В бореньке чего-то нет",
-    "series": true,
-    "alone": false,
-    "rewatch": false,
+    "series": "*",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6910"
-    },
     "date": "25.12.2021",
     "title": "Матрица: Воскрешение",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6911"
-    },
     "date": "26.12.2021",
     "title": "Не смотрите вверх",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": "Фильм года"
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6912"
-    },
     "date": "04.01.2022",
     "title": "Варвара-краса",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6913"
-    },
     "date": "04.01.2022",
     "title": "Головоломка",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6914"
-    },
     "date": "05.01.2022",
     "title": "12 стульев (Гайдай)",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6915"
-    },
     "date": "11.01.2022",
     "title": "12 стульев (Захаров)",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6916"
-    },
     "date": "22.01.2022",
     "title": "Прочь",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6917"
-    },
     "date": "23.01.2022",
     "title": "Облачный Атлас",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6918"
-    },
     "date": "24.01.2022",
     "title": "Ключ от всех дверей",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6919"
-    },
     "date": "28.01.2022",
     "title": "Inception",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc691a"
-    },
     "date": "31.01.2022",
     "title": "Женщина в доме напротив девушки в окне",
-    "series": true,
-    "alone": false,
-    "rewatch": false,
+    "series": "*",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc691b"
-    },
     "date": "05.02.2022",
     "title": "Зомби по имени Шон",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc691c"
-    },
     "date": "06.02.2022",
     "title": "Hot fuzz",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc691d"
-    },
     "date": "08.02.2022",
     "title": "The World's End",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc691e"
-    },
     "date": "20.02.2022",
     "title": "Ночные забавы",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc691f"
-    },
     "date": "25.02.2022",
     "title": "Кризис среднего возраста",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6920"
-    },
     "date": "04.03.2022",
     "title": "Книжный магазин Блэка",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "*",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6921"
-    },
     "date": "09.03.2022",
     "title": "Эквилибриум",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6922"
-    },
     "date": "18.03.2022",
     "title": "Аркейн",
-    "series": true,
-    "alone": false,
-    "rewatch": true,
+    "series": "*",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6923"
-    },
     "date": "20.03.2022",
     "title": "Терминал",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6924"
-    },
     "date": "21.03.2022",
     "title": "Зеленая книга",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6925"
-    },
     "date": "25.03.2022",
     "title": "Сквозь снег",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6926"
-    },
     "date": "26.03.2022",
     "title": "Ночной дозор",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6927"
-    },
     "date": "27.03.2022",
     "title": "Дневной дозор",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6928"
-    },
     "date": "03.04.2022",
     "title": "12 обезьян",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6929"
-    },
     "date": "04.04.2022",
     "title": "Петля времени",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc692a"
-    },
     "date": "22.04.2022",
     "title": "Приключения Шерлока Холмса и доктора Ватсона",
-    "series": true,
-    "alone": false,
-    "rewatch": true,
+    "series": "*",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc692b"
-    },
     "date": "23.04.2022",
     "title": "Шерлок Холмс (2009)",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc692c"
-    },
     "date": "24.04.2022",
-    "title": "Шелока Холмс: Игра теней",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "title": "Шерлок Холмс: Игра теней",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc692d"
-    },
     "date": "28.04.2022",
     "title": "Люди Икс",
-    "series": false,
-    "alone": true,
-    "rewatch": true,
+    "series": "",
+    "alone": "*",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc692e"
-    },
     "date": "30.04.2022",
     "title": "Люди Икс 2",
-    "series": false,
-    "alone": true,
-    "rewatch": true,
+    "series": "",
+    "alone": "*",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc692f"
-    },
     "date": "01.05.2022",
     "title": "Люди Икс: Последняя битва",
-    "series": false,
-    "alone": true,
-    "rewatch": true,
+    "series": "",
+    "alone": "*",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6930"
-    },
     "date": "01.05.2022",
     "title": "Люди Икс: Начало. Росомаха",
-    "series": false,
-    "alone": true,
-    "rewatch": true,
+    "series": "",
+    "alone": "*",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6931"
-    },
     "date": "02.05.2022",
     "title": "Люди Икс: Первый класс",
-    "series": false,
-    "alone": true,
-    "rewatch": false,
+    "series": "",
+    "alone": "*",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6932"
-    },
     "date": "05.05.2022",
     "title": "Иван Васильевич меняет профессию",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6933"
-    },
     "date": "08.05.2022",
     "title": "Предчувствие",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6934"
-    },
     "date": "12.05.2022",
     "title": "Росомаха: Бессмертный",
-    "series": false,
-    "alone": true,
-    "rewatch": false,
+    "series": "",
+    "alone": "*",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6935"
-    },
     "date": "14.05.2022",
     "title": "Люди Икс: Дни минувшего будущего",
-    "series": false,
-    "alone": true,
-    "rewatch": false,
+    "series": "",
+    "alone": "*",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6936"
-    },
     "date": "14.05.2022",
     "title": "Дэдпул",
-    "series": false,
-    "alone": true,
-    "rewatch": false,
+    "series": "",
+    "alone": "*",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6937"
-    },
     "date": "19.05.2022",
     "title": "Люди Икс: Апокалипсис",
-    "series": false,
-    "alone": true,
-    "rewatch": false,
+    "series": "",
+    "alone": "*",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6938"
-    },
     "date": "24.05.2022",
     "title": "Пираты Карибского моря: Проклятие Черной жемчужины",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6939"
-    },
     "date": "26.05.2022",
     "title": "Пираты Карибского моря: Сундук мертвеца",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc693a"
-    },
     "date": "28.05.2022",
     "title": "Пираты Карибского моря: На краю света",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc693b"
-    },
     "date": "31.05.2022",
     "title": "Пираты Карибского моря: На странных берегах",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc693c"
-    },
     "date": "01.06.2022",
     "title": "Финч (2020)",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc693d"
-    },
     "date": "05.06.2022",
     "title": "Пираты Карибского моря: Мертвецы не рассказывают сказки",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc693e"
-    },
     "date": "12.06.2022",
     "title": "Всё везде и сразу",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc693f"
-    },
     "date": "25.05.2022",
     "title": "Мгла",
-    "series": false,
-    "alone": true,
-    "rewatch": true,
+    "series": "",
+    "alone": "*",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6940"
-    },
     "date": "26.06.2022",
     "title": "Смерть, любовь и роботы",
-    "series": true,
-    "alone": true,
-    "rewatch": false,
+    "series": "*",
+    "alone": "*",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6941"
-    },
     "date": "05.07.2022",
     "title": "Упражнения в прекрасном",
-    "series": false,
-    "alone": true,
-    "rewatch": true,
+    "series": "",
+    "alone": "*",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6942"
-    },
     "date": "03.08.2022",
     "title": "Дикари",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6943"
-    },
     "date": "21.08.2022",
     "title": "Удача (2022)",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6944"
-    },
     "date": "24.08.2022",
     "title": "BigBug",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6945"
-    },
     "date": "27.08.2022",
     "title": "Служебный роман",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6946"
-    },
     "date": "28.08.2022",
     "title": "Петровы в гриппе",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6947"
-    },
     "date": "31.08.2022",
     "title": "Земля кочевников",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6948"
-    },
     "date": "19.09.2022",
     "title": "Три тысячи лет желаний",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6949"
-    },
     "date": "22.10.2022",
     "title": "Ведьмак (сериал)",
-    "series": true,
-    "alone": false,
-    "rewatch": true,
+    "series": "*",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc694a"
-    },
     "date": "22.10.2022",
     "title": "Покровские ворота",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc694b"
-    },
     "date": "01.11.2022",
     "title": "На западном фронте без перемен (2022)",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc694c"
-    },
     "date": "02.11.2022",
     "title": "Пиноккио (2022)",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": "не досмотрели"
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc694d"
-    },
     "date": "08.11.2022",
     "title": "Ариэтти из страны лилипутов",
-    "series": false,
-    "alone": false,
-    "rewatch": false,
+    "series": "",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc694e"
-    },
     "date": "11.11.2022",
     "title": "Капельник",
-    "series": true,
-    "alone": false,
-    "rewatch": false,
+    "series": "*",
+    "alone": "",
+    "rewatch": "",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc694f"
-    },
     "date": "12.11.2022",
     "title": "Мой сосед Тоторо",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   },
   {
-    "_id": {
-      "$oid": "639649e7ab0f7cdcd5fc6950"
-    },
     "date": "11.12.2022",
     "title": "Черная кошка, белый кот",
-    "series": false,
-    "alone": false,
-    "rewatch": true,
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "23.12.2022",
+    "title": "Банши Инишерина",
+    "series": "",
+    "alone": "",
+    "rewatch": "",
+    "note": ""
+  },
+  {
+    "date": "25.12.2022",
+    "title": "Клаус",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "26.12.2022",
+    "title": "Неоконченная пьеса для механического пианино",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "28.12.2022",
+    "title": "Раба любви",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "03.01.2023",
+    "title": "Уоллес и Громит: Проклятие кролика-оборотня",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "07.01.2023",
+    "title": "О чем еще говорят мужчины",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "08.01.2023",
+    "title": "Не смотрите вверх",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "29.01.2023",
+    "title": "Свой среди чужих, чужой среди своих",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "17.02.2023",
+    "title": "Сказки земноморья",
+    "series": "",
+    "alone": "",
+    "rewatch": "",
+    "note": ""
+  },
+  {
+    "date": "27.02.2023",
+    "title": "Я тоже хочу",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "15.03.2023",
+    "title": "В Бореньке чего-то нет",
+    "series": "*",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "24.03.2023",
+    "title": "Магазинчик БО",
+    "series": "*",
+    "alone": "*",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "25.03.2023",
+    "title": "О чём говорят мужчины. Простые удовольствия",
+    "series": "",
+    "alone": "",
+    "rewatch": "",
+    "note": ""
+  },
+  {
+    "date": "28.03.2023",
+    "title": "Остров сокровищ",
+    "series": "",
+    "alone": "*",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "29.03.2023",
+    "title": "Интерстеллар",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "02.04.2023",
+    "title": "Однажды в Голливуде",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "03.04.2023",
+    "title": "Ку! Кин-дза-дза",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "13.04.2023",
+    "title": "Король и шут",
+    "series": "*",
+    "alone": "",
+    "rewatch": "",
+    "note": ""
+  },
+  {
+    "date": "17.04.2023",
+    "title": "Властелин Колец. Братство Кольца",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "18.04.2023",
+    "title": "Властелин Колец. Две башни",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "19.04.2023",
+    "title": "Властелин Колец. Возвращение короля",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "26.04.2023",
+    "title": "День выборов (спектакль)",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "01.05.2023",
+    "title": "Футурама: Большой куш Бендера",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "02.05.2023",
+    "title": "Футурама: зверь с миллиардом спин",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "03.05.2023",
+    "title": "Обыкновенное чудо",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "06.05.2023",
+    "title": "Омерзительная восьмерка",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "14.05.2023",
+    "title": "Могила светлячков",
+    "series": "",
+    "alone": "",
+    "rewatch": "",
+    "note": ""
+  },
+  {
+    "date": "17.05.2023",
+    "title": "Небеса обетованные",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "22.05.2023",
+    "title": "Остров проклятых",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "06.06.2023",
+    "title": "Стражи галактики",
+    "series": "",
+    "alone": "*",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "11.06.2023",
+    "title": "Стражи галактики 2",
+    "series": "",
+    "alone": "*",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "17.06.2023",
+    "title": "Женитьба Бальзаминова",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "23.06.2023",
+    "title": "Черное зеркало (6 сезон)",
+    "series": "*",
+    "alone": "",
+    "rewatch": "",
+    "note": "💩"
+  },
+  {
+    "date": "15.07.2023",
+    "title": "Андеграунд",
+    "series": "",
+    "alone": "",
+    "rewatch": "",
+    "note": ""
+  },
+  {
+    "date": "22.07.2023",
+    "title": "Жизнь как чудо",
+    "series": "",
+    "alone": "",
+    "rewatch": "",
+    "note": ""
+  },
+  {
+    "date": "30.07.2023",
+    "title": "99 франков",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "01.08.2023",
+    "title": "Все страхи Бо",
+    "series": "",
+    "alone": "",
+    "rewatch": "",
+    "note": ""
+  },
+  {
+    "date": "06.08.2023",
+    "title": "Дело о мёртвых душах",
+    "series": "*",
+    "alone": "",
+    "rewatch": "*",
+    "note": ""
+  },
+  {
+    "date": "11.08.2023",
+    "title": "Папа, сдохни",
+    "series": "",
+    "alone": "",
+    "rewatch": "",
+    "note": ""
+  },
+  {
+    "date": "13.08.2023",
+    "title": "ДМБ",
+    "series": "",
+    "alone": "",
+    "rewatch": "*",
     "note": ""
   }
 ]
