@@ -6,7 +6,11 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "rsync -a ./dist/ fastuser@kikel.net:~/www/area.kikel.net --delete --archive --compress"
+    "deploy": "npm run build; rsync -a ./dist/ fastuser@kikel.net:~/www/area.kikel.net --delete --archive --compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:KikelDmitry/yes-we-saw.git"
   },
   "dependencies": {
     "register-service-worker": "^1.7.2",

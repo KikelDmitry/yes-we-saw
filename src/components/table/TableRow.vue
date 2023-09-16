@@ -146,11 +146,14 @@ export default {
     border: 0;
     padding: $cell-padding;
     transition: background-color 200ms;
+    transition: inherit;
 
     &:focus {
-      background-color: lighten($color-bg, 35%);
       outline: 0;
     }
+  }
+  &:focus-within {
+    background-color: lighten($color-bg, 35%);
   }
 }
 .row {

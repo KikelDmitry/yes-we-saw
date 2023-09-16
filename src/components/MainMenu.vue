@@ -26,7 +26,6 @@ export default {
   --height: 40px;
 
   width: 100%;
-  // height: var(--height);
   display: flex;
   justify-content: center;
   column-gap: var(--gap);
@@ -41,10 +40,6 @@ export default {
   &__link {
     height: var(--height);
     flex-basis: 0;
-
-    @include mf(500) {
-      // min-height: 60px;
-    }
   }
 }
 .link {
@@ -60,7 +55,6 @@ export default {
   font-weight: 700;
   line-height: 1.12;
   text-transform: uppercase;
-  // letter-spacing: 0.02em;
   border-radius: 6px;
 
   box-shadow: 10px 10px 20px #000;

@@ -1,22 +1,27 @@
 <template>
   <header class="header">
-    <h1 class="header__title">{{ title }}</h1>
+    <h1 class="header__title">{{ config.project.title }}</h1>
   </header>
 </template>
 
-  <script>
+<script>
+import { mapGetters } from "vuex";
 export default {
   data() {
     return {
-      title: "Yes, we saw!",
+      // title: "Yes, we saw!",
     };
+  },
+  computed: {
+    ...mapGetters({
+      config: "config",
+    }),
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .header {
-  // min-height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;

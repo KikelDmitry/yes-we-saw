@@ -83,7 +83,6 @@ export default {
       position: sticky;
       left: 0;
       z-index: 2;
-      // background-color: inherit;
       background-image: linear-gradient(
         90deg,
         darken($color-bg, 1%) 0%,
@@ -96,6 +95,7 @@ export default {
     &::after {
       position: absolute;
       right: 3px;
+      line-height: 1.2;
     }
     &.is-asc {
       &::after {

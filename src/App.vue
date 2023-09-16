@@ -61,37 +61,34 @@ body {
   height: 100vh;
   overflow: auto;
 
-  &::-webkit-scrollbar {
-    width: 16px;
+  // &::-webkit-scrollbar {
+  //   width: 16px;
 
-    &-track {
-      background-color: transparent;
+  //   &-track {
+  //     background-color: transparent;
 
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.15);
-      }
-    }
-    &-thumb {
-      background-image: linear-gradient(
-        0deg,
-        $color-bg 0,
-        lighten($color-bg, 18%) 50%,
-        $color-bg 100%
-      );
-      box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
-    }
-    &-corner {
-      background-color: lighten($color-bg, 25%);
-    }
-  }
+  //     &:hover {
+  //       background-color: rgba(0, 0, 0, 0.15);
+  //     }
+  //   }
+  //   &-thumb {
+  //     background-image: linear-gradient(
+  //       0deg,
+  //       $color-bg 0,
+  //       lighten($color-bg, 18%) 50%,
+  //       $color-bg 100%
+  //     );
+  //     box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+  //   }
+  //   &-corner {
+  //     background-color: lighten($color-bg, 25%);
+  //   }
+  // }
 
   &__inner {
     max-width: 1220px;
     margin: 0 auto;
     padding: 0px 10px;
-    // display: grid;
-    // grid-template-rows: auto auto 1fr;
-    // align-content: flex-start;
 
     @include df(768) {
       padding: 0;
