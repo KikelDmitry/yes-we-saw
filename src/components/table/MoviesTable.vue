@@ -32,7 +32,10 @@ export default {
 <style lang="scss" scoped>
 .movies-list {
   width: 100%;
-  overflow-x: auto;
+  
+  @include df(768) {
+    overflow-x: auto;
+  }
 }
 .table {
   width: 100%;
