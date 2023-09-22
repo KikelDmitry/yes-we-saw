@@ -51,7 +51,7 @@ export default {
     },
   },
   mounted() {
-    this.sortBy(this.sortedBy)
+    this.sortBy(this.sortedBy);
   } 
 };
 </script>
