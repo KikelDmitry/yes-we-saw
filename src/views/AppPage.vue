@@ -8,15 +8,14 @@
 // import AppPreloader from "../components/AppPreloader.vue"
 
 export default {
-  components: {
-  },
+  components: {},
   props: ["addClass"],
 };
 </script>
 
 <style lang="scss" scoped>
 .content {
-  position: relative;  
+  position: relative;
   padding: 20px 0;
 }
 </style>

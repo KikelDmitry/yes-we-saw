@@ -13,13 +13,6 @@ export default {
       },
     };
   },
-  methods: {
-    mask() {
-      if (this.input.date.length % 2 == 0) {
-        this.input.date += ".";
-      }
-    },
-  },
 };
 </script>
 

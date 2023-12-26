@@ -1,30 +1,96 @@
 <template>
   <div class="movies-list">
     <app-filters></app-filters>
-    <table class="table">
-      <table-head></table-head>
-      <table-row
-        v-for="(movie, idx) in this.$store.state.moviesList"
-        :key="idx"
-        class="table__row"
-        :movie="movie"
-        :num="idx + 1"
-      >
-      </table-row>
-    </table>
+    <div class="table-wrapper">
+      <table class="table">
+        <!-- table heading -->
+        <thead>
+          <tr class="table__row table__row--head">
+            <th class="table__cell table__cell--num">#</th>
+            <th
+              v-for="field in fields"
+              :key="field"
+              class="table__cell"
+              :class="[
+                { 'is-sort': sortedBy === field },
+                'is-' + dir.toLowerCase(),
+                'table__cell--' + field,
+              ]"
+              @click="sortBy(field)"
+              :title="`Sort by ${field}`"
+            >
+              {{ field }}
+            </th>
+          </tr>
+        </thead>
+        <!-- table body -->
+        <tbody>
+          <tr
+            class="table__row table__row--body"
+            v-for="(movie, idx) in this.$store.state.moviesList"
+            :key="idx"
+          >
+            <td class="table__cell table__cell--num">{{ idx + 1 }}</td>
+            <td
+              class="table__cell"
+              v-for="(field, idx) in fields"
+              :key="idx"
+              :class="'table__cell--' + field"
+            >
+              <span>
+                {{ outputProp(movie[field]) }}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="last-block">To be continued...</div>
   </div>
 </template>
 
 <script>
 import AppFilters from "../AppFilters.vue";
-import TableHead from "./TableHead.vue";
-import TableRow from "./TableRow.vue";
+import { mapGetters } from "vuex";
 
 export default {
   components: {
     AppFilters,
-    TableHead,
-    TableRow,
+  },
+  data() {
+    return {
+      dir: "ASC",
+      sortedBy: "title",
+    };
+  },
+  computed: {
+    ...mapGetters({
+      fields: "movieFields",
+    }),
+  },
+  methods: {
+    sortBy(field) {
+      this.sortedBy = field;
+      this.dir === "ASC" ? (this.dir = "DESC") : (this.dir = "ASC");
+      this.$store.state.moviesList = this.$store.state.moviesList.sort(
+        (a, b) => {
+          if (this.dir === "ASC") {
+            return a[field] > b[field] ? 1 : -1;
+          } else if (this.dir === "DESC") {
+            return a[field] < b[field] ? 1 : -1;
+          } else {
+            throw new Error("Sort direction is incorrect");
+          }
+        }
+      );
+    },
+    outputProp(prop) {
+      if (typeof prop == "boolean") {
+        return prop === true ? "x" : null;
+      } else {
+        return prop;
+      }
+    },
   },
 };
 </script>
@@ -32,63 +98,103 @@ export default {
 <style lang="scss" scoped>
 .movies-list {
   width: 100%;
-  
-  @include df(768) {
-    overflow-x: auto;
-  }
+}
+.table-wrapper {
+  overflow: auto;
 }
 .table {
+  $border-color: rgba(200, 200, 200, 0.15);
+  $border-width: 1px;
+
+  min-width: 900px;
   width: 100%;
-  min-width: 728px;
-  padding-left: 50px;
-  border-collapse: separate;
-  border-spacing: 4px;
-  font-size: 18px;
-
-  @include df(768) {
-    font-size: 16px;
-  }
-
+  border-collapse: collapse;
   &__row {
-    transition: all 100ms 100ms;
-
-    &--heading {
-      text-transform: capitalize;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      font-size: 20px;
+    &--head {
+      // position: sticky;
+      // top: 0;
       background-color: $color-bg;
-      background-image: linear-gradient(
-        90deg,
-        darken($color-bg, 1%) calc(0% - 32px),
-        lighten($color-bg, 18%) calc(50% - 16px),
-        darken($color-bg, 1%) 100%
-      );
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-
-      @include df(768) {
-        font-size: 18px;
-      }
-    }
-    &:not(&--heading) {
-      background-image: linear-gradient(
-        90deg,
-        lighten($color-bg, 10%),
-        transparent,
-        lighten($color-bg, 10%)
-      );
-
-      &:nth-child(odd) {
-        background-color: lighten($color-bg, 4%);
-      }
-      &:nth-child(even) {
-        background-color: lighten($color-bg, 1%);
-      }
-      &:hover {
-        background-color: lighten($color-bg, 8%);
-      }
+      text-transform: uppercase;
     }
   }
+  &__cell {
+    padding: 0.3em 10px;
+    text-align: center;
+    border-bottom: $border-width solid $border-color;
+
+    &:not(:last-of-type) {
+      border-right: $border-width solid $border-color;
+    }
+
+    // head only
+    .table__row--head & {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      &:not(.table__cell--num) {
+        &.is-sort {
+          position: relative;
+          &::after {
+            position: absolute;
+            right: 3px;
+            line-height: 1.2;
+          }
+          &.is-asc {
+            &::after {
+              content: "↓";
+            }
+          }
+          &.is-desc {
+            &::after {
+              content: "↑";
+            }
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    // body only
+    .table__row--body & {
+    }
+    // &--series, &--alone, &--date, &--title, &--note, &--num
+    &--title,
+    &--date,
+    &--note {
+      padding-left: 10px;
+      text-align: left;
+      white-space: nowrap;
+    }
+    &--date {
+      width: 0;
+    }
+    &--title {
+      max-width: 20em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &--note {
+      max-width: 9em;
+    }
+    &--series,
+    &--rewatch,
+    &--alone {
+      width: 80px;
+    }
+    &--num {
+      width: 0;
+    }
+  }
+}
+.last-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  font-size: 6vmin;
+  text-align: center;
+  opacity: 0.6;
 }
 </style>

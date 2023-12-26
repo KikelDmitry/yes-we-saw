@@ -39,7 +39,7 @@ export default {
   }
   &__link {
     height: var(--height);
-    flex-basis: 0;
+    flex-basis: 13%;
   }
 }
 .link {
@@ -51,7 +51,7 @@ export default {
   padding: 0.6em 1em;
 
   text-align: center;
-  font-size: 15px;
+  font-size: calc(13px + .5vmin);
   font-weight: 700;
   line-height: 1.12;
   text-transform: uppercase;
@@ -61,16 +61,23 @@ export default {
   background-color: #fff;
   background-image: linear-gradient(
     315deg,
-    var(--color-one),
-    var(--color-two),
-    var(--color-two),
-    var(--color-one)
+    rgba(0, 0, 0, 0.7),
+    #fff,
+    rgb(230, 230, 255)
   );
+  // background-image: linear-gradient(
+  //   315deg,
+  //   var(--color-one),
+  //   var(--color-two),
+  //   var(--color-two),
+  //   var(--color-one)
+  // );
+  background-size: contain;
   color: #000;
+  transition: background-size 500ms;
 
   &.is-active {
-    --color-one: rgba(0, 0, 0, 0.7);
-    --color-two: rgb(230, 230, 255);
+   background-size: 200%;
   }
 }
 </style>

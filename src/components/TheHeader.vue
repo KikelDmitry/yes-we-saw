@@ -7,11 +7,6 @@
 <script>
 import { mapGetters } from "vuex";
 export default {
-  data() {
-    return {
-      // title: "Yes, we saw!",
-    };
-  },
   computed: {
     ...mapGetters({
       config: "config",
