@@ -59,7 +59,7 @@ export default {
   },
   data() {
     return {
-      dir: "ASC",
+      dir: "DESC",
       sortedBy: "title",
     };
   },
@@ -70,8 +70,11 @@ export default {
   },
   methods: {
     sortBy(field) {
-      this.sortedBy = field;
-      this.dir === "ASC" ? (this.dir = "DESC") : (this.dir = "ASC");
+      if (field === this.sortedBy) {
+        this.dir === "ASC" ? (this.dir = "DESC") : (this.dir = "ASC");
+      } else {
+        this.sortedBy = field;
+      }
       this.$store.state.moviesList = this.$store.state.moviesList.sort(
         (a, b) => {
           if (this.dir === "ASC") {
@@ -163,7 +166,6 @@ export default {
     &--title,
     &--date,
     &--note {
-      padding-left: 10px;
       text-align: left;
       white-space: nowrap;
     }
