@@ -1,5 +1,5 @@
 import { createStore } from 'vuex';
-import {config} from './config';
+import { config } from './config';
 
 export default createStore({
   state: {

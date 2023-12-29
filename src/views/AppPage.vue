@@ -15,6 +15,7 @@ export default {
 
 <style lang="scss" scoped>
 .content {
+  flex: 1;
   position: relative;
   padding: 20px 0;
 }

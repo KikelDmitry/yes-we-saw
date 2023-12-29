@@ -86,9 +86,12 @@ body {
   // }
 
   &__inner {
+    min-height: 100vh;
     max-width: 1220px;
     margin: 0 auto;
     padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
 
     @include df(768) {
       padding: 0;

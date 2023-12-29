@@ -45,8 +45,8 @@
         </tbody>
       </table>
     </div>
-    <div class="last-block">To be continued...</div>
   </div>
+  
 </template>
 
 <script>
@@ -61,6 +61,7 @@ export default {
     return {
       dir: "DESC",
       sortedBy: "title",
+      
     };
   },
   computed: {
@@ -87,6 +88,7 @@ export default {
         }
       );
     },
+    
     outputProp(prop) {
       if (typeof prop == "boolean") {
         return prop === true ? "x" : null;
@@ -102,6 +104,15 @@ export default {
 .movies-list {
   width: 100%;
 }
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  &__form {
+  }
+  &__amount {
+  }
+}
 .table-wrapper {
   overflow: auto;
 }
@@ -112,10 +123,11 @@ export default {
   min-width: 900px;
   width: 100%;
   border-collapse: collapse;
+
   &__row {
     &--head {
-      // position: sticky;
-      // top: 0;
+      position: sticky;
+      top: 0;
       background-color: $color-bg;
       text-transform: uppercase;
     }
@@ -133,28 +145,30 @@ export default {
     .table__row--head & {
       padding-left: 15px;
       padding-right: 15px;
+      user-select: none;
 
       &:not(.table__cell--num) {
         &.is-sort {
           position: relative;
           &::after {
+            content: "↓";
             position: absolute;
             right: 3px;
             line-height: 1.2;
+            transition: all 200ms;
           }
           &.is-asc {
             &::after {
-              content: "↓";
             }
           }
           &.is-desc {
             &::after {
-              content: "↑";
+              transform: rotateX(180deg) translateY(-22%);
             }
           }
-          &:hover {
-            cursor: pointer;
-          }
+        }
+        &:hover {
+          cursor: pointer;
         }
       }
     }
@@ -190,13 +204,5 @@ export default {
     }
   }
 }
-.last-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100px;
-  font-size: 6vmin;
-  text-align: center;
-  opacity: 0.6;
-}
+
 </style>
